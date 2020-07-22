@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>WEB1 - html</title>
+    <meta charset="utf-8">
+    <style>
+       body{
+            margin:0;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        a.saw {
+            color: gray;
+        }
+        a#active{ 
+            color: red;
+        }
+        h1 {
+            font-size: 60px;
+            text-decoration: none;
+            text-align:center;
+            border-bottom:1px solid gray;
+            margin:0;
+            padding: 20px;
+        }
+        ol,ul{
+            width: 100px;
+            margin: 0px;
+            padding: 30px;;
+        }
+        ul {
+            width: 100px;
+            margin: 0px;
+            padding-top: 0px;;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol,ul{
+            padding-left: 30px;
+        }
+        #article {
+            padding-left: 30px;
+            border-left: 1px solid gray;
+        }
+        @media(max-width: 400px){
+            #grid ol,ul{
+                border-right: none;
+            }
+            #grid {
+                display: block;
+            }
+            #article {
+                border-top: 1px solid gray;
+            }
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171170279-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-171170279-1');
+    </script>
+
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    
+    <div id="grid">
+        <div>
+            <ol>
+                <li><a href="1.html" class="saw" id="active">HTML</a></li>
+                <li><a href="2.html" class="saw">CSS</a></li>
+                <li><a href="3.html" class="saw">JavaScript</a></li>
+            </ol>
+            <ul>
+                <li>전주영</li>
+                <li>박아름</li>
+                <li>손호성</li>
+            </ul>
+        </div>
+    
+        <div id="article">
+            <h2>HTML</h2>
+            <p>
+            <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">
+            Hypertext Markup Language (HTML)</a> is the standard markup language<br>
+            or <strong>creating <u>web</u> pages</strong><br>
+            and web applications.Web browsers receive HTML documents from a web server or from<br>
+            local storage and render them into multimedia web pages. HTML describes the structure<br>
+            of a web page semantically and originally included cues for the appearance of the document.<br>
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwf4WRBzpcpGDINj4GoPQ9qwKsv1Pt0auuhg&usqp=CAU"
+            width="40%">
+            <p style="margin-top:45px;">
+            HTML elements are the building blocks of HTML pages. With HTML constructs,<br>
+            images and other objects, such as interactive forms, may be embedded into the rendered page.<br>
+            It provides a means to create structured documents by denoting structural semantics<br>
+            for text such as headings, paragraphs, lists, links, quotes and other items.<br>
+            HTML elements are delineated by tags, written using angle brackets. <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
